@@ -1,0 +1,206 @@
+name: customer_service_provider_hybrid
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.18.2 <3.0.0"
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  provider: ^6.0.5
+  flutter_screenutil: ^5.7.0
+  entry: ^0.0.6
+  fluttertoast: 8.2.2
+  pin_code_fields: ^8.0.1
+  simple_circular_progress_bar: ^1.0.2
+  webview_flutter: ^3.0.4
+  flutter_rating_bar: ^4.0.1
+  image_cropper: 3.0.1
+  image_picker: ^0.8.6+1
+  carousel_slider: ^4.2.1
+  flutter_google_places_hoc081098: 
+  mask_text_input_formatter: ^2.5.0
+  month_year_picker:
+    path: month_year_picker_edit
+  # month_picker_dialog: 0.4.0
+  intl: ^0.17.0
+  multi_select_flutter: ^4.1.3
+  # getwidget: ^3.1.1
+  dropdown_search:
+     path: dropdown_search-5.0.6
+  lottie: ^2.3.2
+  intl_phone_field:
+    path: intl_phone_field-3.1.0
+  country_picker: ^2.0.19
+  url_launcher: ^6.1.5
+  dio: 4.0.6
+  connectivity_plus: ^4.0.2
+  logger: ^2.0.2+1
+  shared_preferences: ^2.2.0
+  firebase_messaging: 14.6.8
+  extended_image: ^6.4.1
+  shimmer: ^3.0.0
+  firebase_auth: 4.10.0
+  google_sign_in: ^6.1.4
+  firebase_core: 2.16.0
+  flutter_local_notifications: 9.5.2
+  flutter_slidable: ^0.6.0
+  # month_picker_dialog: ^0.4.0
+  # intl: ^0.17.0
+  socket_io_client: ^2.0.2
+  timeago: ^3.3.0
+  sign_in_with_apple: 4.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.11.0
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/app_icon/app_icon.png"
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^1.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/fonts/
+    - assets/temp_images/
+    - assets/files/
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: Jost-Bold
+      fonts:
+        - asset: assets/fonts/Jost/static/Jost-Bold.ttf
+    - family: Jost-ExtraBold
+      fonts:
+        - asset: assets/fonts/Jost/static/Jost-ExtraBold.ttf
+    - family: Jost-ExtraLight
+      fonts:
+        - asset: assets/fonts/Jost/static/Jost-ExtraLight.ttf
+    - family: Jost-Light
+      fonts:
+        - asset: assets/fonts/Jost/static/Jost-Light.ttf
+    - family: Jost-Medium
+      fonts:
+        - asset: assets/fonts/Jost/static/Jost-Medium.ttf
+    - family: Jost-Regular
+      fonts:
+        - asset: assets/fonts/Jost/static/Jost-Regular.ttf
+    - family: Jost-SemiBold
+      fonts:
+        - asset: assets/fonts/Jost/static/Jost-SemiBold.ttf
+    - family: Jost-Thin
+      fonts:
+        - asset: assets/fonts/Jost/static/Jost-Thin.ttf
+    - family: Nunito-Bold
+      fonts:
+        - asset: assets/fonts/Nunito/static/Nunito-Bold.ttf
+    - family: Nunito-ExtraBold
+      fonts:
+        - asset: assets/fonts/Nunito/static/Nunito-ExtraBold.ttf
+    - family: Nunito-ExtraLight
+      fonts:
+        - asset: assets/fonts/Nunito/static/Nunito-ExtraLight.ttf
+    - family: Nunito-Light
+      fonts:
+        - asset: assets/fonts/Nunito/static/Nunito-Light.ttf
+    - family: Nunito-Medium
+      fonts:
+        - asset: assets/fonts/Nunito/static/Nunito-Medium.ttf
+    - family: Nunito-Regular
+      fonts:
+        - asset: assets/fonts/Nunito/static/Nunito-Regular.ttf
+    - family: Nunito-SemiBold
+      fonts:
+        - asset: assets/fonts/Nunito/static/Nunito-SemiBold.ttf
+    - family: Playfair_Display-Bold
+      fonts:
+        - asset: assets/fonts/Playfair_Display/static/PlayfairDisplay-Bold.ttf
+    - family: Playfair_Display-ExtraBold
+      fonts:
+        - asset: assets/fonts/Playfair_Display/static/PlayfairDisplay-ExtraBold.ttf
+    - family: Playfair_Display-Medium
+      fonts:
+        - asset: assets/fonts/Playfair_Display/static/PlayfairDisplay-Medium.ttf
+    - family: Playfair_Display-Regular
+      fonts:
+        - asset: assets/fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf
+    - family: Playfair_Display-SemiBold
+      fonts:
+        - asset: assets/fonts/Playfair_Display/static/PlayfairDisplay-SemiBold.ttf
+    - family: Roboto-Bold
+      fonts:
+        - asset: assets/fonts/Roboto/Roboto-Bold.ttf
+    - family: Roboto-Light
+      fonts:
+        - asset: assets/fonts/Roboto/Roboto-Light.ttf
+    - family: Roboto-Medium
+      fonts:
+        - asset: assets/fonts/Roboto/Roboto-Medium.ttf
+    - family: Roboto-Regular
+      fonts:
+        - asset: assets/fonts/Roboto/Roboto-Regular.ttf
+    - family: Roboto-Thin
+      fonts:
+        - asset: assets/fonts/Roboto/Roboto-Thin.ttf
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages

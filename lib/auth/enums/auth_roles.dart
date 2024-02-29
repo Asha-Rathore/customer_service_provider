@@ -1,0 +1,3 @@
+enum AuthRole{
+  user, business,
+}

@@ -1,0 +1,4 @@
+enum NotificationType{
+  disable,
+  enable
+}
